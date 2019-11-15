@@ -3,3 +3,19 @@
 		border: 2px black solid;
 		text-align: center;
 	}
+	
+/*Sökf'lt  */
+.sökfält input[type=text] {
+  float: right;
+  padding: 6px;
+  border: solid black 2px;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+p
+	{
+		font-family: Arial;
+		font-size: 28px;
+		
+	}
