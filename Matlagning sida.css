@@ -2,13 +2,13 @@
 display: grid;
 grid-template-rows: 1fr 2fr 1fr 1fr;
 grid-template-columns: 1fr 1fr 1fr;
-grid-template-areas: 	'nav1 nav2 nav3'
+grid-template-areas: 	'nav nav nav'
 						'main main main'
 						'footer footer footer'
 }
 
 nav{
-	grid-area: nav1;
+	grid-area: nav;
 	height: 180px;
 }
 .border{
