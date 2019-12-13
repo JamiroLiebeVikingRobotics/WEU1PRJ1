@@ -46,3 +46,16 @@ nav > ul :nth-child(1) a {
 nav > ul a:hover{
     background:red;
 }
+.Wrapper{
+display: grid;
+grid-template-rows: 1fr 2fr 1fr 1fr;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-areas: 	'nav nav nav'
+						'main main main'
+						'footer footer footer'
+}
+
+nav{
+	grid-area: nav;
+	height: 180px;
+}
