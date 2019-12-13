@@ -1,0 +1,17 @@
+.Wrapper{
+display: grid;
+grid-template-rows: 1fr 2fr 1fr 1fr;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-areas: 	'nav1 nav2 nav3'
+						'main main main'
+						'footer footer footer'
+}
+
+nav{
+	grid-area: nav1;
+	height: 180px;
+}
+.border{
+	border: solid black 1px;
+	border-collapse: collapse;
+}
