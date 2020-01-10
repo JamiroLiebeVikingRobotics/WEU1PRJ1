@@ -3,7 +3,7 @@
 	{
 	  float: right;
 	  padding: 6px;
-	  border: solid rgba(0,0,0,1) 2px;
+	  border: solid rgba(0, 0, 0, 1) 2px;
 	  margin-top: 8px;
 	  margin-right: 16px;
 	  font-size: 17px;
@@ -28,7 +28,7 @@ nav ul li{
 
 nav > ul a {
     display: block;
-    color: rgba(255,255,255,1);
+    color: rgba(255, 255, 255, 1);
     text-align: center;
     font: 34px Arial;
     text-decoration: none;
@@ -54,23 +54,33 @@ nav > ul a:hover{
 }
 .Wrapper{
 display: grid;
-grid-gap: 1em;
 grid-template-rows: 1fr 2fr 1fr 1fr;
 grid-template-columns: 1fr 1fr 1fr;
+grid-gap: 20px;
 grid-template-areas: 	'nav nav nav'
 						'article1 article2 article3'
-						'main1 main2 main3'
-						'footer footer footer';
+						'main main main';
 }
-p[target]
+img + p
 {
 	font-size: 26px;
 	font-family: Comic Sans MS;
 }
+tr:nth-child(odd)
+{
+	background-color: rgba(0, 255, 125, 1);
+}
+tr:nth-child(even)
+{
+	background-color: rgba(50, 100, 225, 1);
+	
+}
+
 nav{
 	grid-area: nav;
 	height: 180px;
 }
+
 .article1 > img
 {
 	grid-area: article1;
@@ -92,12 +102,17 @@ nav{
 	width: 100%;
 	border-radius: 8px;
 }
-.main1 > p
-{ grid-area: main1;
+table, th, td {
+  width: 80%;
+  border: 3px solid rgba(0, 0, 0, 1);
+  border-collapse: collapse;
 }
-.main2 > p
-{ grid-area: main1;
+a
+{
+	text-decoration:none;
+	color: rgba(0, 0, 0, 1 );
 }
-.main3 > p
-{ grid-area: main1;
+a:hover
+{
+	color: rgba(0, 0, 255, 0.6);
 }
