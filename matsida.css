@@ -57,11 +57,36 @@ display: grid;
 grid-template-rows: 1fr 2fr 1fr 1fr;
 grid-template-columns: 1fr 1fr 1fr;
 grid-template-areas: 	'nav nav nav'
-						'main main main'
-						'footer footer footer';
+						'article1 article2 article3'
+						'main main main';
 }
 
 nav{
 	grid-area: nav;
 	height: 180px;
+}
+
+main{
+	grid-area: main;
+}
+.article1 > img
+{
+	grid-area: article1;
+	height: 100%;
+	width: 100%;
+	border-radius: 8px;
+}
+.article2 > img
+{
+	grid-area: article2;
+	height: 100%;
+	width: 100%;
+	border-radius: 8px;
+}
+.article3 > img
+{
+	grid-area: article3;
+	height: 100%;
+	width: 100%;
+	border-radius: 8px;
 }
